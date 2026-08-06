@@ -7,6 +7,7 @@ from control.youtube import *
 from control.keyboard import *
 from control.window import *
 from core.assistant import *
+from control.search import *
 
 
 
@@ -299,6 +300,29 @@ def execute(command):
 
     elif "exit assistant" in command:
         exit_assistant()
+
+    if command.startswith("search google for"):
+        query = command.replace("search google for", "").strip()
+        search_google(query)
+
+    elif command.startswith("search youtube for"):
+        query = command.replace("search youtube for", "").strip()
+        search_youtube(query)
+
+    elif command == "open chatgpt":
+        open_chatgpt()
+
+    elif command.startswith("search wikipedia for"):
+        query = command.replace("search wikipedia for", "").strip()
+        search_wikipedia(query)
+
+    elif command.startswith("search images of"):
+        query = command.replace("search images of", "").strip()
+        search_images(query)
+
+    elif "time" in command:
+        from datetime import datetime
+        return datetime.now().strftime("%I:%M:%S %p")
 
 
     

@@ -12,6 +12,7 @@ def wait_for_wakeword():
             continue
 
         if WAKE_WORD in command:
-            show_listening_window()     # Center window open
-            speak("Yes, I am listening")
+            show_listening_window()
+            speak("Yes, I am listening")     # Center window open
+            print("Wake word detected!")
             return True

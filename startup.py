@@ -15,7 +15,7 @@ startup_folder = os.path.join(
 
 shortcut = os.path.join(
     startup_folder,
-    "K_AI.bat"
+    "Reven_AI.bat"
 )
 
 

@@ -1,4 +1,4 @@
-AI_NAME = "K"
+AI_NAME = "Reven"
 
 ACTIVE_WORDS = [
     "jack",

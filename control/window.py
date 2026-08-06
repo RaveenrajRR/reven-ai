@@ -24,6 +24,8 @@ def switch_window():
 def next_window():
     pyautogui.hotkey("alt", "tab")
 
+
+
 # Previous Window (Alt + Shift + Tab)
 def previous_window():
     pyautogui.keyDown("alt")

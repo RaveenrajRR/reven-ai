@@ -1,3 +1,5 @@
+from typing import Self
+
 import customtkinter as ctk
 import threading
 import math
@@ -62,6 +64,7 @@ def show_listening_window():
         # ----------------------------
         # Canvas
         # ----------------------------
+        Self.title("AI Assistant")
         canvas = ctk.CTkCanvas(
             frame,
             bg="#101010",
